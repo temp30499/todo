@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="text-center text-light my-4">
+            <h1 class="mb-4">Todo List</h1>
+            <form class="search">
+                <input class="form-control m-auto" type="text" name="search" placeholder="Search todos" />
+            </form>
+        </header>
+
+        <div class="todo-container mx-auto">
+            <table class="table table-striped text-light">
+                <thead>
+                    <tr>
+                        <th scope="col">Todo</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="todos">
+                    <!-- Todo items will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <form class="add text-center my-4">
+            <label class="text-light">Add a new todo...</label>
+            <input class="form-control m-auto" type="text" name="add" />
+            <div class="mt-2">
+                <button type="button" class="btn btn-primary" id="addTodo">Add Todo</button>
+                <button type="button" class="btn btn-secondary" id="changeColor">Change Color</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

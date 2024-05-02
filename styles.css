@@ -1,0 +1,30 @@
+body {
+    background: #352f5b;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.todo-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.todos tr.completed td {
+    background-color: #4CAF50;
+}
+
+.todos tr.partially-completed td {
+    background-color: #FFA500;
+}
+
+.todos tr.not-completed td {
+    background-color: #f44336;
+}
